@@ -1,0 +1,17 @@
+<span class="box header">
+  <span style="color: #4a4a4a; font-weight: 600"> Cart </span></span
+>
+<span class="box" *ngIf="products.length > 0">
+  <span style="font-weight: 600"> Empty Cart </span>
+  <button class="box button" *ngIf="products.length > 0" (click)="emptyCart()">
+    X
+  </button>
+</span>
+<div class="box cartbox shopcart">
+  <div *ngFor="let p of products">
+    {{ p.product.name }} | {{ p.product.price }}
+    <img class="imageClass" [src]="p.product.image" />
+    <button class="box button" (click)="removeFromCart(p.product)">X</button>
+    <hr />
+  </div>
+</div>

@@ -1,0 +1,18 @@
+.shoplist {
+  overflow: overlay;
+  max-height: 17rem;
+}
+
+div:focus {
+  background-color: #e5087e;
+}
+
+.titleBox {
+  display: flex;
+
+  text-align: left;
+  padding: 0 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+}

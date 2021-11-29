@@ -1,0 +1,27 @@
+div {
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  color: #4a4a4a;
+  font-size: 2rem;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.logo {
+  max-width: 8rem;
+  position: absolute;
+  left: 92px;
+  top: 30px;
+}
+.divContnent {
+  justify-content: space-evenly;
+}
+
+.placeh1 {
+  margin: auto;
+}
+
+.placeNav {
+  margin-inline-end: auto;
+}

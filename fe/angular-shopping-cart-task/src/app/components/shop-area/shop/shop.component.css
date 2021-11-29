@@ -1,0 +1,17 @@
+div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 15% 80% 5%;
+}
+
+.cartBox {
+  grid-column: span 3;
+  width: 90%;
+  display: inline-flex;
+}
+
+.listBox {
+  grid-column: span 3;
+  display: inline-flex;
+  width: 90%;
+}

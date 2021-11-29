@@ -1,0 +1,30 @@
+<span class="box">
+  <label
+    style="
+      display: flex;
+      justify-content: center;
+      color: #4a4a4a;
+      font-weight: 600;
+    "
+    >Search Our Shop</label
+  >
+  <span class="titleBox">
+    <input
+      style="display: flex; margin-inline: auto"
+      type="text"
+      (keyup)="onKeypressEvent($event)"
+    />
+  </span>
+</span>
+<span *ngIf="this.searchFound" class="box shoplist">
+  <div
+    tabIndex="-1"
+    #myItems
+    *ngFor="let p of products; let i = index"
+    (keydown)="this.focusChangeOrSubmitWithKeyboard($event, i)"
+    (click)="this.addToCart(p)"
+  >
+    <span id="{{ i }}" style="color: #4a4a4a">{{ p.name }} </span>
+    <hr />
+  </div>
+</span>

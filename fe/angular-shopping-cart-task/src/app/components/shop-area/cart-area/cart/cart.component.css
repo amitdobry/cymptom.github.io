@@ -1,0 +1,16 @@
+.imageClass {
+  max-width: 4rem;
+}
+
+.shopcart {
+  overflow: overlay;
+  max-height: 19rem;
+}
+
+.header {
+  padding: 1rem;
+}
+
+.button:hover {
+  background-color: darkgray;
+}

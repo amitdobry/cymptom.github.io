@@ -1,0 +1,37 @@
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  font-style: italic;
+  font-family: "Futura", Sans-serif;
+  color: #e5087e;
+  background-image: linear-gradient(45deg, white, white);
+}
+
+a {
+  color: blue;
+}
+
+.box {
+  display: inline-block;
+  text-align: left;
+  padding: 0 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 11px;
+  color: #4a4a4a;
+}
+
+h2 {
+  text-align: center;
+}
+
+.active {
+  color: darkslategrey;
+  font-style: italic;
+  font-weight: bold;
+}
